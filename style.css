@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Manrope:wght@600&family=Noto+Sans+Old+Permic&family=Philosopher&family=Playfair+Display:wght@600&family=Poppins:wght@100;200;300;400&family=Ubuntu&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.zepto {
+  height: 60px;
+  width: 150px;
+  margin-left: 4rem;
+}
+
+.navbar {
+  background-color: rgb(57, 4, 100);
+  border: solid black;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navleft {
+  display: flex;
+  align-items: center;
+}
+
+.navright {
+  display: flex;
+  align-items: center;
+}
+
+.fa-location-dot {
+  font-size: x-large;
+  margin-left: 5px;
+}
+
+.line {
+  font-size: 35px;
+  margin-left: 15px;
+  margin-top: 2px;
+  color: rgba(233, 229, 229, 0.3);
+}
+
+#mag {
+  width: 800px;
+  position: relative;
+  right: 11.5rem;
+  font-size: x-large;
+  border-radius: 5%;
+}
+
+input::placeholder {
+  padding-left: 35px;
+  position: absolute;
+  bottom: 0.4rem;
+  color: rgba(190, 187, 187, 0.974);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.fa-magnifying-glass {
+  font-size: larger;
+  position: relative;
+  right: 60.65rem;
+}
+
+#login {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: normal;
+  position: relative;
+  right: 10.5rem;
+}
+
+#login:hover {
+  color: rgba(190, 187, 187, 0.974);
+}
+
+.cart {
+  background-color: #ff3269;
+  color: white;
+  font-size: x-large;
+  border-radius: 0.5rem;
+  position: relative;
+  right: 5rem;
+  height: 55px;
+  width: 175px;
+}
+
+#dil{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  gap: 10px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 30px;
+}
+.fa-fire{
+  font-size: 55px;
+  position: relative;
+  top: 20px;
+  
+}
+
+.paan{
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left:  135px;
+  margin-right: 135px;
+  border-style: none;
+  height: 200px;
+  background-color: rgba(27, 163, 118, 0.979);
+  
+  border-radius:.5rem;
+}
+
+.paanleft{
+  position: relative;
+  left: 55px;
+  top: 12px;
+  font-weight: 900px;
+  color: white;
+  
+}
+.paanleft h1{
+  font-size: 75px;
+  letter-spacing: .5px;
+}
+.paanleft h2{
+  font-size: 30px;
+}
+.paanleft button{
+  border-radius: .5rem;
+  color:  rgba(27, 163, 118, 0.979);
+  font-size: larger;
+  padding-bottom: 2px;
+  font-weight: 600;
+}
+.paanleft button:hover{
+  box-shadow: 0 0 1rem rgba(27, 163, 118, 0.979);
+}
+
+.paanright{
+  display: flex;
+  position: relative;
+  
+}
+.mint{
+  border-radius: 50%;
+  height: 150px;
+  position: relative;
+  left: 175px;
+  top: 55px;
+  display: block;
+}
+
+.alfakher{
+  height: 150px;
+  border-radius: 35%;
+  position:relative;
+  left: 150px;
+  top: 55px;
+  opacity: .9;
+  
+}
+.cigarette-pack{
+  height: 165px;
+  width: 125px;
+  position: relative;
+  left: 135px;
+  top: 34px;
+  opacity:1;
+}
+.write{
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 75%;
+  left: 157%;
+  transform: translate(-50%, -50%);
+  color:red;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slim{
+  height: 146px;
+  
+  position: relative;
+  left: 138px;
+  top: 55px;
+  opacity:1;
+}
+.hookah{
+  height: 190px;
+  background-color: transparent;
+  
+  position: relative;
+  left: 138px;
+  top: 7px;
+  opacity:1
+}
+
+.new{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  overflow: hidden;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.newyear {
+    
+    height: 300px;
+    width: 1300px;
+    animation: fadeIn 5s ease-in-out infinite; /* Adjust the duration and timing function as needed */
+    
+  }
+
+  .offer{
+    display: flex;
+    
+    
+  }
+  .container-custom {
+    max-width: 500px; /* Customize the maximum width as needed */
+    ; /* Center the container */
+    position: relative;
+    left: 109px;
+    text-decoration: none;
+  }
+
+  .scroll{
+   display: flex;
+    margin-top: 75px;
+    gap: 35px;
+    width: max-content;
+  }
+
+  .fruits{
+    border-style: solid;
+    border-color: black;
+    height: 275px;
+    width: 500px;
+    border-radius: 1rem;
+    background-color: rgba(17, 212, 17, 0.959);
+    display: flex;
+  }
+
+  .fruitsleft{
+    position: relative;
+    top: 25px;
+    left: 25px;
+  }
+
+  .best{
+    border-style: none;
+    background-color: rgb(6, 116, 35);
+    width: fit-content;
+    letter-spacing: normal;
+    border-radius: .5rem;
+    color: white;
+  }
+  .fruitsleft p{
+    font-family: cursive;
+    color: whitesmoke;
+    font-size: 18px;
+    position: relative;
+    top: 18px;
+    font-weight: 500;
+  }
+  .fresh{
+    color: whitesmoke;
+    font-family: 'Courgette';
+font-family: 'Manrope', sans-serif;
+font-family: 'Noto Sans Old Permic', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+  }
+
+  #explore1{
+    font-size: x-large;
+    margin-top: 4px;
+    border-radius: .5rem;
+    box-shadow:  2px 2px green;
+    color:   green;
+  }
+  
+#fruimg{
+  height: 200px;
+  position: relative;
+  left: 95px;
+  top: 35px;
+  border-radius: 50%;
+}
+
+.detox{
+  border-style: solid;
+    border-color: black;
+    height: 275px;
+    width: 500px;
+    border-radius: 1rem;
+    background-color: orangered;
+    display: flex;
+}
+
+.detoxleft{
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+.upto{
+  border-style: none;
+  background-color: rgba(220, 78, 27, 0.775);
+  width: 185px;
+  letter-spacing: normal;
+  border-radius: .5rem;
+  color: white;
+}
+.newdetox h1{
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#explore2{
+  font-size: x-large;
+  margin-top: 48px;
+  border-radius: .5rem;
+    box-shadow:  2px 2px  rgba(220, 78, 27, 0.775);
+    color:  rgba(220, 78, 27, 0.775);
+}
+
+#juice{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 75px;
+  top: 35px;
+  border-radius: 50%;
+}
+
+.lays{
+  border-style: solid;
+  border-color: black;
+  height: 275px;
+  width: 500px;
+  border-radius: 1rem;
+  background-color: rgba(255, 170, 0, 0.432);
+  display: flex;
+}
+.laysleft{
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.upto4{
+  border-style: none;
+  background-color: rgba(255, 170, 0, 0.59);
+  width: 185px;
+  letter-spacing: normal;
+  border-radius: .5rem;
+  color: white;
+}
+.eat h1{
+   
+    color: rgb(214, 155, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+#explore3{
+  font-size: x-large;
+  margin-top: 1.5px;
+  border-radius: .5rem;
+  box-shadow:  2px 2px  rgba(255, 170, 0, 0.59);
+  color:    rgba(255, 170, 0, 0.59);
+}
+
+#laysimg{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 75px;
+  top: 35px;
+  border-radius: 50%;
+}
+
+.winter{
+  border-style: solid;
+  border-color: black;
+  height: 275px;
+  width: 500px;
+  border-radius: 1rem;
+  background-color: rgba(0, 34, 255, 0.432);
+  display: flex;
+}
+
+.winterleft{
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+.upto5{
+  border-style: none;
+  background-color:  rgba(0, 34, 255, 0.432);
+  width: 185px;
+  letter-spacing: normal;
+  border-radius: .5rem;
+  color: white;
+  position: relative;
+  right: 1.5rem;
+  bottom: 1.6rem;
+}
+.must h1{
+  color: whitesmoke;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 65px;
+}
+.must p{
+  color: whitesmoke;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 25px;
+  position: relative;
+  bottom: 3rem;
+}
+
+#explore4{
+  font-size: x-large;
+  position: relative;
+  bottom: 10px;
+  background-color: blue;
+  border-radius: .5rem;
+  box-shadow:  2px 2px  rgba(0, 34, 255, 0.432);
+  color:   white;
+}
+
+#lotion{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 75px;
+  top: 35px;
+  border-radius: 50%;
+}
+
+.berry{
+  border-style: solid;
+  border-color: black;
+  height: 275px;
+  width: 500px;
+  border-radius: 1rem;
+  background-color: rgba(17, 212, 17, 0.959);
+  display: flex;
+}
+
+.berryleft{
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+.so h1{
+  color: white;
+  font-family: 'Courgette';
+  font-weight: 900;
+}
+
+.so p{
+  color: white;
+  font-family: 'arial';
+  font-size: 25px;
+  position: relative;
+  bottom: 2rem;
+}
+.pp{
+  position: relative;
+  bottom: 2rem;
+}
+
+#strawimg{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 95px;
+  top: 35px;
+  border-radius: 50%;
+}
+
