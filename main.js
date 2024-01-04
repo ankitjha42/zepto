@@ -113,3 +113,16 @@ function authenticateUser() {
     closePopup();
 }
 
+
+  let count = 0;
+  const counterButton = document.getElementById('amlbtn');
+ 
+
+  counterButton.addEventListener('click', () => {
+    count++;
+    counterButton.textContent = `+ ${count}`;
+  });
+</script>
+
+</body>
+</html>
