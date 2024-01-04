@@ -120,7 +120,7 @@ function authenticateUser() {
 
   counterButton.addEventListener('click', () => {
     count++;
-    counterButton.textContent = `+ ${count}`;
+    amlbtn.textContent = `+ ${count}`;
   });
 </script>
 
