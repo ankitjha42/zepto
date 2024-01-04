@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -17,7 +16,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Manrope:wght@600&family=Noto+Sans+Old+Permic&family=Playfair+Display:wght@600&family=Poppins:wght@100;200;300;400&family=Ubuntu&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="popup.css">
+
+<link rel="stylesheet" href="normalize.css">
 
   <title>Zepto</title>
 </head>
@@ -33,10 +40,27 @@
       </div>
       <div class="navright">
         
-        <input type="text" placeholder="search for over 5000 products" id="mag">
+        <input type="text" placeholder=" search for over 5000 products" id="mag">
         <i class="fa-solid fa-magnifying-glass" style="color: #9e9e9e;"></i>
+       
         <a href="#" id="login">Login</a>
-        <button class="cart">My Cart</button>
+        <div id="overlay"></div>
+        <div id="loginPopup">
+          <span id="closeBtn" onclick="closePopup()">&times;</span>
+          <form id="loginForm">
+              <label for="username">Username:</label>
+              <input type="text" id="username" required>
+      
+              <label for="password">Password:</label>
+              <input type="password" id="password" required>
+              <br>
+              <a href="#">forget password</a>
+      
+              <button type="button" onclick="authenticateUser()" style="background-color: #ff3269;"class="lbtn">Login</button>
+          </form>
+      </div>
+
+        <button class="cart"><i class="fa-solid fa-bag-shopping" style="color: #f2f2f2; position: relative;right: 5px;"></i>My Cart</button>
       </div>
     </div>
   </section>
@@ -99,84 +123,474 @@
   
   <!-- scrolling images -->
   <div class="box-section">
-    <div class="owl-carousel owl-theme">
-      <div class="scroll">
+      <div class="owl-carousel owl-theme">
         <!-- fruits -->
         <div class="fruits">
-          <div class="fruitsleft">
-            <div class="best"> <h3>Best Deals</h3></div>
-            <p>winter's freshest</p>
-            <div class="fresh"><h1>Fruits & <br>veggies</h1></div>
-            <button id="explore1">Explore Now</button>
+            <div class="fruitsleft">
+              <div class="best"> <h3>Best Deals</h3></div>
+              <p>winter's freshest</p>
+              <div class="fresh"><h1>Fruits & <br>veggies</h1></div>
+              <button id="explore1">Explore Now</button>
+            </div>
+            <div class="fruitsright">
+              <img src="assets/111-removebg-preview.png" alt="img" id="fruimg">
+            </div>
           </div>
-          <div class="fruitsright">
-            <img src="assets/111-removebg-preview.png" alt="img" id="fruimg">
+      
+          <!-- Newyear -->
+          <div class="detox">
+            <div class="detoxleft">
+              <div class="upto"><h3>Up to 30% off</h3></div>
+              <div class="newdetox"><h1>New Year <br>Detox</h1></div>
+              <button id="explore2">Explore Now</button>
+            </div>
+            <div class="detoxright">
+              <img src="assets/fruit-juice-removebg-preview.png" alt="img" id="juice">
+            </div>
+          </div>
+      
+          <!-- snacksparty -->
+          <div class="lays">
+            <div class="laysleft">
+              <div class="upto4"><h3>Up to 40% off</h3></div>
+              <div class="eat"><h1>Eat. <br> Feast. <br> Repeat</h1></div>
+              <button id="explore3">Explore Now</button>
+            </div>
+            <div class="laysright"><img src="assets/fresh-ice-cold-water-drink-with-lemon-near-to-fried-corrugated-golden-potato-chips-with-parsley-leaf-in-wooden-bowl-on-wood-backdrop-angle-view-2D554RA-removebg-preview.png" alt="img" id="laysimg"></div>
+          </div>
+      
+          <!-- winter -->
+          <div class="winter">
+            
+            <div class="winterleft">
+              <div class="upto5"><h3>Up to 40% off</h3></div>
+              <div class="must"><h1>winter</h1><br><p>--Must Have--</p></div>
+              <button id="explore4">order Now</button>
+            </div>
+            <div class="winterright"><img src="assets/1c9d0e1f9eb04ac0e79909aa70d3101d-removebg-preview.png"alt="img" id="lotion"></div>
+            
+          </div>
+      
+          <!-- berry -->
+          <div class="berry">
+            <div class="berryleft">
+              <div class="best"> <h3>Best Deals</h3></div>
+              <div class="so"><h1>So Beery <br>garpeful</h1>
+              <br><p>to meet you</p></div>
+              <button id="explore1" class="pp">Explore Now</button>
+            </div>
+            <div class="berryright">
+              <img src="assets/strawberry-and-grapes-isolated-on-white-background-2A0YG93-PhotoRoom.png-PhotoRoom.png" alt="img" id="strawimg">
+            </div>
           </div>
         </div>
-    
-        <!-- Newyear -->
-        <div class="detox">
-          <div class="detoxleft">
-            <div class="upto"><h3>Up to 30% off</h3></div>
-            <div class="newdetox"><h1>New Year <br>Detox</h1></div>
-            <button id="explore2">Explore Now</button>
+    </div>
+    <h2 style="margin-left: 105px;">your favourite picks</h2>
+
+    <!-- another -->
+
+    <div class="box-section1">
+      <div class="owl-carousel first-carausel">
+        <!-- amul -->
+        <div class="amul">
+          <div class="amul-top">
+            <img src="assets/amul.jpg" alt="amulimg" id="amulimg">
           </div>
-          <div class="detoxright">
-            <img src="assets/fruit-juice-removebg-preview.png" alt="img" id="juice">
+          <div class="amul-down">
+            <div class="amul-downleft">
+              <h2>Amul Butter-</h2><h2>pasteurised</h2>
+              <div class="amul-weight">500gm</div>
+              <i class="fa-solid fa-indian-rupee-sign fa-sm"></i><span>128</span>
+            </div>
+            <div class="amul-downright">
+              <button id="amlbtn">Add</button>
+            </div>
           </div>
         </div>
-    
-        <!-- snacksparty -->
-        <div class="lays">
-          <div class="laysleft">
-            <div class="upto4"><h3>Up to 40% off</h3></div>
-            <div class="eat"><h1>Eat. <br> Feast. <br> Repeat</h1></div>
-            <button id="explore3">Explore Now</button>
+
+        <!-- fortune -->
+        <div class="fortune">
+          <div class="fortune-top">
+            <img src="assets/fortune-rice-bran-health-oil.jpg" alt="fortuneimg" id="fortuneimg">
           </div>
-          <div class="laysright"><img src="assets/fresh-ice-cold-water-drink-with-lemon-near-to-fried-corrugated-golden-potato-chips-with-parsley-leaf-in-wooden-bowl-on-wood-backdrop-angle-view-2D554RA-removebg-preview.png" alt="img" id="laysimg"></div>
+          <div class="fortune-down">
+            <div class="fortune-downleft">
+              <h2>Fotune Kachi ghani</h2><h2>mustard oil(Bottle)</h2>
+              <div class="fortune-weight">500gm</div>
+              <i class="fa-solid fa-indian-rupee-sign fa-sm"></i><span>133</span>
+            </div>
+            <div class="fotune-downright">
+              <button id="fortunebtn">Add</button>
+            </div>
+          </div>
         </div>
-    
-        <!-- winter -->
-        <div class="winter">
-          
-          <div class="winterleft">
-            <div class="upto5"><h3>Up to 40% off</h3></div>
-            <div class="must"><h1>winter</h1><br><p>--Must Have--</p></div>
-            <button id="explore4">order Now</button>
+
+        <!-- coconut -->
+        <div class="coconut">
+          <div class="coconut-top">
+            <img src="assets/Coconut-1-600x600.jpg" alt="coconutimg" id="coconutimg">
           </div>
-          <div class="winterright"><img src="assets/1c9d0e1f9eb04ac0e79909aa70d3101d-removebg-preview.png"alt="img" id="lotion"></div>
-          
+          <div class="coconut-mid"><h2>Tender Coconut</h2></div>
+          <div class="coconut-down">
+            <div class="coconut-downleft">
+              <div class="coconut-weight">1pc(Min.250ml)</div>
+              <div class="price">
+                <i class="fa-solid fa-indian-rupee-sign fa-sm"></i><span>46</span>
+              </div>
+             
+            </div>
+            <div class="cocnut-downright">
+              <button id="coconutbtn">Add</button>
+            </div>
+          </div>
         </div>
-    
-        <!-- berry -->
-        <div class="berry">
-          <div class="berryleft">
-            <div class="best"> <h3>Best Deals</h3></div>
-            <div class="so"><h1>So Beery <br>garpeful</h1>
-            <br><p>to meet you</p></div>
-            <button id="explore1" class="pp">Explore Now</button>
+
+
+        <!-- amul-masti -->
+        <div class="amul-masti">
+          <div class="amul-masti-top">
+            <img src="assets/masti-dahi-pouch-amul-original-imag3ynjzvghasb5.webp" alt="amul-mastiimg" id="amul-mastiimg">
           </div>
-          <div class="berryright">
-            <img src="assets/strawberry-and-grapes-isolated-on-white-background-2A0YG93-PhotoRoom.png-PhotoRoom.png" alt="img" id="strawimg">
+          <div class="amul-masti-mid"><h2>Amul Masti Dahi</h2></div>
+          <div class="amul-masti-down">
+            <div class="amul-masti-downleft">
+              <div class="amul-masti-weight">400g</div>
+              <div class="price1">
+                <i class="fa-solid fa-indian-rupee-sign fa-sm"></i><span>34</span>
+              </div>
+            </div>
+            <div class="amul-masti-downright">
+              <button id="amul-mastibtn">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- amul-paneer -->
+        <div class="amul-paneer">
+          <div class="amul-paneer-top">
+            <img src="assets/1655237761104_SKU1333.jpeg" alt="amul-paneerimg" id="amul-paneerimg">
+          </div>
+          <div class="amul-paneer-mid"><h2>Amul Malai Paneer Fresh</h2></div>
+          <div class="amul-paneer-down">
+            <div class="amul-paneer-downleft">
+              <div class="amul-paneer-weight">200g</div>
+              <div class="price2">
+                <i class="fa-solid fa-indian-rupee-sign fa-sm"></i><span>91</span>
+              </div>
+            </div>
+            <div class="amul-paneer-downright">
+              <button id="amul-paneerbtn">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- fortune-soyabean -->
+        <div class="forune-soyabean-oil">
+          <div class="forune-soyabean-oil-top">
+            <img src="assets/soyabean.jpg" alt="forune-soyabean-oilimg" id="forune-soyabean-oilimg">
+          </div>
+          <div class="forune-soyabean-oil-mid"><h2>fortune-soyabean-oil</h2></div>
+          <div class="forune-soyabean-oil-down">
+            <div class="forune-soyabean-oil-downleft">
+              <div class="forune-soyabean-oil-weight">1L</div>
+              <div class="price3">
+                <i class="fa-solid fa-indian-rupee-sign fa-sm"></i><span>117</span>
+              </div>
+            </div>
+            <div class="forune-soyabean-oil-downright">
+              <button id="fortune-soyabean-oilbtn">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- tomato -->
+        <div class="tomato">
+          <div class="tomato-top">
+            <img src="assets/tomato.jpg" alt="tomatoimg" id="tomatoimg">
+          </div>
+          <div class="tomato-mid"><h2>Tomato Local</h2></div>
+          <div class="tomato-down">
+            <div class="tomato-downleft">
+              <div class="tomato-weight">1kg</div>
+              <div class="price4">
+                <i class="fa-solid fa-indian-rupee-sign fa-sm"></i><span>40</span>
+              </div>
+            </div>
+            <div class="tomato-downright">
+              <button id="tomatibtn">Add</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  
-  
-  
-  
-  
-  <!-- script section -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-  
-<script src="./scrollreveal.min.js"></script>
 
-  
-  
+    <div id="catogeries"><h2>Explore By Categories</h2></div>
+    <!-- categories -->
+    <section class="categories">
+      <div class="fruits-vegetables">
+        <div class="fruits-vegetables-top">
+          <img src="assets/Fruits-and-Vegetables.jpg" alt="Vegetables" id="Vegetables">
+        </div>
+        <div class="fruits-vegetables-down"><h2>Fruits & <div class="v">Vegetables</div></h2></div>
+      </div>
+      <!-- atta -->
+      <div class="atta">
+        <div class="atta-top">
+          <img src="assets/atta.jpg" alt="attaimg" id="attaimg">
+        </div>
+        <div class="atta-down"><h2>Atta,rice <br>oils & dals</h2></div>
+      </div>
+      <!-- masala -->
+      <div class="masala">
+        <div class="masala-top">
+          <img src="assets/masala.jpg" alt="masalaimg" id="masalaimg">
+        </div>
+        <div class="masala-down">
+          <h2>Masala & <br>Dry fruits</h2>
+        </div>
+      </div>
+
+      <!-- craving -->
+      <div class="craving">
+        <div class="craving-top">
+          <img src="assets/craving.png" alt="craving" id="craving">
+        </div>
+        <div class="craving-down"><h2>sweets <br> craving</h2></div>
+      </div>
+
+      <!-- frozen -->
+      <div class="frozen">
+        <div class="frozen-top">
+          <img src="assets/icecream.jpeg" alt="frozenimg" id="frozenimg">
+        </div>
+        <div class="frozen-down"><h2>Frozen food <br>Icecream</h2></div>
+      </div>
+
+      <!-- packaged -->
+      <div class="packaged">
+        <div class="packaged-top">
+          <img src="assets/packaged-food-brands.png" alt="packagedimg" id="packagedimg">
+        </div>
+        <div class="packaged-down"><h2>Packaged <br>Food</h2></div>
+      </div>
+
+      <!-- dairy -->
+      <div class="dairy">
+        <div class="dairy-top">
+          <img src="assets/dairy.jpeg" alt="dairyimg" id="dairyimg">
+        </div>
+        <div class="dairy-down"><h2>Dairy <br>Products</h2></div>
+      </div>
+
+    </section>
+
+    <!-- continue categories -->
+    <sectioon class="categories2">
+
+      <!-- cold-drinks -->
+      <div class="cold-drinks">
+        <div class="cold-drinks-top">
+          <img src="assets/cold-drink-recipe-formulation.jpeg" alt="cold-drinksimg" id="cold-drinksimg">
+        </div>
+        <div class="cold-drinks-down"><h2>Cold Drinks <br>juices</h2></div>
+      </div>
+
+      <!-- munchies -->
+      <div class="munchies">
+        <div class="munchies-top">
+          <img src="assets/munchies.jpg" alt="munchiesimg" id="munchiesimg">
+        </div>
+        <div class="munchies-down"><h2>Munchies <br>Chips</h2></div>
+      </div>
+
+      <!-- fishes -->
+      <div class="fishes">
+        <div class="fishes-top">
+          <img src="assets/fish.jpg" alt="fishesimg" id="fishesimg">
+        </div>
+        <div class="fishes-down"><h2>Meats,Fish <br>& Eggs</h2></div>
+      </div>
+
+      <!-- breakfast -->
+      <div class="breakfast">
+        <div class="breakfast-top">
+          <img src="assets/cookies.jpeg" alt="breakfastimg" id="breakfastimg">
+        </div>
+        <div class="breakfast-down"><h2>Breakfast <br>&Cookies</h2></div>
+      </div>
+
+      <!-- tea -->
+      <div class="tea">
+        <div class="tea-top">
+          <img src="assets/tea.jpeg" alt="teaimg" id="teaimg">
+        </div>
+        <div class="tea-down"><h2>Tea,Coffee <br>&More</h2></div>
+      </div>
+
+      <!-- biscuits -->
+      <div class="biscuits">
+        <div class="biscuits-top">
+          <img src="assets/biscuits.jpg" alt="biscuitsimg" id="biscuitsimg">
+        </div>
+        <div class="biscuits-down"><h2>Biscuits <br>&Cookies</h2></div>
+      </div>
+
+      <!-- Makup -->
+      <div class="Makup">
+        <div class="Makup-top">
+          <img src="assets/makeup.jpeg" alt="Makupimg" id="Makupimg">
+        </div>
+        <div class="Makup-down"><h2>Makeup <br>& Skincares</h2></div>
+      </div>
+
+      <!-- bath -->
+      <div class="bath">
+        <div class="bath-top">
+          <img src="assets/Bath-Body-Works-Protective-Hair-Perfume.jpg" alt="bathimg" id="bathimg">
+        </div>
+        <div class="bath-down"><h2>Bath,Body <br>&Hair</h2></div>
+      </div>
+
+    </sectioon>
+
+    <!-- categories3 -->
+    <section class="categories3">
+      <!-- cleaning -->
+      <div class="cleaning">
+        <div class="cleaning-top">
+          <img src="assets/cleaning.jpeg" alt="cleaningimg" id="cleaningimg">
+        </div>
+        <div class="cleaning-down"><h2>Cleaning <br>Essentials</h2></div>
+      </div>
+
+      <!-- Home -->
+      <div class="Home">
+        <div class="Home-top">
+          <img src="assets/home.jpg" alt="Homeimg" id="Homeimg">
+        </div>
+        <div class="Home-down"><h2>Home <br>Needs</h2></div>
+      </div>
+
+      <!-- Electricals -->
+      <div class="Electricals">
+        <div class="Electricals-top">
+          <img src="assets/electicals.jpg" alt="Electricalsimg" id="Electricalsimg">
+        </div>
+        <div class="Electricals-down"><h2>Electricals & <br>accessories</h2></div>
+      </div>
+
+      <!-- grooming -->
+      <div class="grooming">
+        <div class="grooming-top">
+          <img src="assets/grooming.jpg" alt="groomingimg" id="groomingimg">
+        </div>
+        <div class="grooming-down"><h2>Grooming <br>Essentials</h2></div>
+      </div>
+
+      <!-- hygiene -->
+      <div class="hygiene">
+        <div class="hygiene-top">
+          <img src="assets/wellness.jpg" alt="hygieneimg" id="hygieneimg">
+        </div>
+        <div class="hygiene-down"><h2>Hygiene & <br>Wellness</h2></div>
+      </div>
+
+      <!-- baby -->
+      <div class="baby">
+        <div class="baby-top">
+          <img src="assets/baby-care-kit-1.jpg" alt="babyimg" id="babyimg">
+        </div>
+        <div class="baby-down"><h2>Baby <br>Care</h2></div>
+      </div>
+
+      <!-- pet -->
+      <div class="pet">
+        <div class="pet-top">
+          <img src="assets/petcare.jpg" alt="petimg" id="petimg">
+        </div>
+        <div class="pet-down"><h2>Pet <br>Care</h2></div>
+      </div>
+
+      <!-- paancorner -->
+      <div class="paancorner">
+        <div class="paancorner-top">
+          <img src="assets/paan.jpg" alt="paancornerimg" id="paancornerimg">
+        </div>
+        <div class="paancorner-down"><h2>Paan <br>Corner</h2></div>
+      </div>
+    </section>
+
+    <div id="coconuttender">
+      <div class="coconuttender-left">
+        <h1>Best Deals</h1>
+        <div class="get">Get 1 Tender <br>Coconut at <i class="fa-solid fa-indian-rupee-sign" style="color: #ededee;position: relative;top: 2.5px;"></i>19</div>
+        <div class="valid">Valid on Fruits & Veggies<br>Orders over <i class="fa-solid fa-indian-rupee-sign" style="color: #ededee8a;position: relative;top: 2.5px;"></i>99 </div>
+        
+      </div>
+      <div class="coconuttender-right">
+        <img src="assets/tender-coconut-3-pcs-product-images-o590009785-p591041745-0-202203171040.jpg" alt="tenderimg" id="tenderimg"><i class="fa-solid fa-money-bill" style="color: #285c05;"></i><div class="n">19.</div>
+      </div>
+    </div>
+
+   <div class="footer">
+
+    <div class="footerleft">
+      <h1>Zepto</h1>
+      <li id="thoght">You're going to go through tough times <br>- that's life. ...</li>
+    </div>
+    <div class="footermid">
+      <div class="midleft">
+       <a href="#" id="download"><b>Download</b></a>
+       <a href="#" id="download">Window app</a>
+       <a href="#" id="download">Mac app</a>
+       <a href="#" id="download">Linux app</a>
+       <a href="#" id="download">Desktop app</a>
+       <a href="#" id="download"><b>Servives</b></a>
+       <a href="#" id="download">Design</a>
+       <a href="#" id="download">Development</a>
+      </div>
+      <div class="midright">
+        <a href="#" id="produts"><b>Products</b></a>
+        <a href="#" id="produts">Web</a>
+        <a href="#" id="produts">App</a>
+        <a href="#" id="produts">Software</a>
+        <a href="#" id="produts">Ecommerce</a>
+        <a href="#" id="produts"><b>Company</b></a>
+        <a href="#" id="produts">Terms & conditions</a>
+        <a href="#" id="produts">Piracy Policy</a>
+      </div>
+    </div>
+    <div class="footerright">
+      <h2>Get in touch</h2>
+      <div class="social">
+       <a href="https://www.instagram.com/jhaankit499/" target="_blank"> <i class="fa-brands fa-square-instagram"id="try"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100051011556652" target="_blank"><i class="fa-brands fa-facebook" id="try"></i></a>
+       <a href="https://www.linkedin.com/in/ankit-jha-b44435259/" target="_blank"> <i class="fa-brands fa-linkedin"id="try"></i></a>
+       <a href="https://github.com/ankitjha42" target="_blank"> <i class="fa-brands fa-github"id="try"></i></a>
+        <a href="mailto:jhaankit499@gmail.com"><i class="fa-solid fa-envelope"id="try"></i>
+        </a>
+      </div>
+      <div class="entrys">
+        <input type="text" placeholder="Enter Email ID" id="Email"> <button style=" background-color: black; color: aliceblue;border-radius: .2rem;">Subscribe</button>
+      </div>
+    </div>
+   </div>
+   <div class="footer-text">
+    <p>copyright &copy; 2023 by Ankit | All Rights Reserved . </p>
+</div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+
+<script src="main.js"></script>
+<script src="main1.js"></script>
 
 </body>
 </html>

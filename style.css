@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Manrope:wght@600&family=Noto+Sans+Old+Permic&family=Philosopher&family=Playfair+Display:wght@600&family=Poppins:wght@100;200;300;400&family=Ubuntu&display=swap');
+
+@import 'owl.carousel/dist/assets/owl.carousel.css';
+@import 'owl.carousel';
 body {
   margin: 0;
   padding: 0;
@@ -53,7 +56,7 @@ body {
 input::placeholder {
   padding-left: 35px;
   position: absolute;
-  bottom: 0.4rem;
+  bottom: 0rem;
   color: rgba(190, 187, 187, 0.974);
   font-family: 'Ubuntu', sans-serif;
 }
@@ -62,6 +65,7 @@ input::placeholder {
   font-size: larger;
   position: relative;
   right: 60.65rem;
+  border-style: none;
 }
 
 #login {
@@ -223,8 +227,6 @@ input::placeholder {
   }
 }
 
-
-
 .newyear {
     
     height: 300px;
@@ -246,16 +248,19 @@ input::placeholder {
     text-decoration: none;
   }
 
-  .scroll{
-   display: flex;
+  .box-section{
+   /* display: flex; */
     margin-top: 75px;
-    gap: 35px;
-    width: max-content;
+    position: relative;
+    left: 105px;
+    width: 1325px;
   }
+  
+
 
   .fruits{
-    border-style: solid;
-    border-color: black;
+    border-style:none;
+    
     height: 275px;
     width: 500px;
     border-radius: 1rem;
@@ -312,8 +317,8 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .detox{
-  border-style: solid;
-    border-color: black;
+  border-style: none;
+    
     height: 275px;
     width: 500px;
     border-radius: 1rem;
@@ -358,8 +363,8 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .lays{
-  border-style: solid;
-  border-color: black;
+  border-style: none;
+  
   height: 275px;
   width: 500px;
   border-radius: 1rem;
@@ -404,8 +409,8 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .winter{
-  border-style: solid;
-  border-color: black;
+  border-style: none;
+  
   height: 275px;
   width: 500px;
   border-radius: 1rem;
@@ -462,8 +467,8 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .berry{
-  border-style: solid;
-  border-color: black;
+  border-style: none;
+  
   height: 275px;
   width: 500px;
   border-radius: 1rem;
@@ -503,3 +508,1026 @@ font-family: 'Ubuntu', sans-serif;
   border-radius: 50%;
 }
 
+.box-section1{
+  margin-top: 25px;
+  position: relative;
+  margin-left: 105px;
+  width: 1325px;
+  
+}
+
+.amul{
+  border-style: none;
+  border-radius: .5rem;
+  width: 125px;
+  height: 200px;
+}
+#amulimg{
+  height: 100px;
+  margin-left: 0rem;
+}
+
+#amlbtn{
+  position: relative;
+  top: 3.8rem;
+  right: .7rem;
+  border-radius: .3rem;
+  color: #ff3269;
+
+}
+.amul-down{
+  display: flex;
+}
+.amul-downleft h2{
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: normal;
+  margin-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.amul-weight{
+  color:rgba(0, 0, 0, 0.377);
+  margin-left: 8px;
+  position: relative;
+  bottom: .5rem;
+}
+.fa-indian-rupee-sign{
+  margin-left: 8px;
+  position: relative;
+  bottom:.5rem;
+  margin-right: 2px;
+  
+
+}
+.amul-downright{
+  
+  justify-content: right;
+
+}
+span{
+  position: relative;
+  bottom: .6rem;
+}
+
+.fortune{
+  border-style: none;
+  
+  border-radius: .5rem;
+  width: 125px;
+  height: 200px;
+}
+#fortuneimg{
+  height: 100px;
+  margin-left: 0rem;
+}
+
+.fortune-down{
+  display: flex;
+}
+
+.fortune-downleft h2{
+  font-size: 9px;
+  font-weight: 1200;
+  letter-spacing:normal;
+  margin-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#fortunebtn{
+  position: relative;
+  top: 3.8rem;
+  right: .4rem;
+  border-radius: .3rem;
+  color: #ff3269;
+}
+
+.fortune-weight{
+  color:rgba(0, 0, 0, 0.377);
+  margin-left: 8px;
+  position: relative;
+  bottom: .5rem;
+}
+
+.coconut{
+  border-style: none;
+  
+  border-radius: .5rem;
+  width: 125px;
+  height: 200px;
+}
+
+#coconutimg{
+  height: 100px;
+  margin-left: 0rem;
+}
+
+.coconut-mid h2{
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing:normal;
+  margin-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.coconut-weight{
+  color:rgba(0, 0, 0, 0.377);
+  margin-left: 7px;
+  position: relative;
+  bottom: .5rem;
+}
+
+.price{
+  margin-top: 30px;
+}
+.coconut-down{
+  display: flex;
+}
+#coconutbtn{
+  position: relative;
+  top: 2.5rem;
+  right:2.8rem;
+  border-radius: .3rem;
+  color: #ff3269;
+}
+
+.amul-masti{
+  border-style:none;
+ 
+  border-radius: .5rem;
+  width: 125px;
+  height: 200px;
+}
+
+#amul-mastiimg{
+  height: 100px;
+  margin-top: 0.2rem;
+}
+
+.amul-masti-mid h2{
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing:normal;
+  margin-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.amul-masti-weight{
+  color:rgba(0, 0, 0, 0.377);
+  margin-left: 7px;
+  position: relative;
+  bottom: .5rem;
+}
+
+.price1{
+  margin-top: 30px;
+}
+
+.amul-masti-down{
+  display: flex;
+}
+#amul-mastibtn{
+  position: relative;
+  top: 2.3rem;
+  left: 1.8rem;
+  border-radius: .3rem;
+  color: #ff3269;
+}
+
+.amul-paneer{
+  border-style:none;
+  
+  border-radius: .5rem;
+  width: 125px;
+  height: 200px;
+}
+
+#amul-paneerimg{
+  height: 100px;
+  margin-left: 0rem;
+}
+
+.amul-paneer-mid h2{
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing:normal;
+  margin-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.amul-paneer-down{
+  display: flex;
+}
+
+.amul-paneer-weight{
+  color:rgba(0, 0, 0, 0.377);
+  margin-left: 7px;
+  position: relative;
+  bottom: .5rem;
+}
+
+.price2{
+  margin-top: 16px;
+}
+
+#amul-paneerbtn{
+  position: relative;
+  top: 1.5rem;
+  left: 1.8rem;
+  border-radius: .3rem;
+  color: #ff3269;
+}
+
+.forune-soyabean-oil{
+  border-style: none;
+  
+  border-radius: .5rem;
+  width: 125px;
+  height: 200px;
+}
+
+#forune-soyabean-oilimg{
+  height: 100px;
+  margin-top: 0.2rem;
+}
+
+.forune-soyabean-oil-mid h2{
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing:normal;
+  margin-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.forune-soyabean-oil-down{
+  display: flex;
+}
+
+.forune-soyabean-oil-weight{
+  color:rgba(0, 0, 0, 0.377);
+  margin-left: 7px;
+  position: relative;
+  bottom: .5rem;
+}
+
+.price3{
+  margin-top: 16px;
+}
+
+#fortune-soyabean-oilbtn{
+  position: relative;
+  top: 1.3rem;
+  left: 1.8rem;
+  border-radius: .3rem;
+  color: #ff3269;
+}
+
+.tomato{
+  border-style: none;
+  
+  border-radius: .5rem;
+  width: 125px;
+  height: 200px;
+}
+
+#tomatoimg{
+  height: 100px;
+  width: 65px;
+  margin-left: 1.8rem;
+}
+
+.tomato-mid h2{
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing:normal;
+  margin-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tomato-down{
+  display: flex;
+}
+
+.tomato-weight{
+  color:rgba(0, 0, 0, 0.377);
+  margin-left: 7px;
+  position: relative;
+  bottom: .5rem;
+}
+
+.price4{
+  margin-top: 30px;
+}
+#tomatibtn{
+  position: relative;
+  top: 2.3rem;
+  left: 2.3rem;
+  border-radius: .3rem;
+  color: #ff3269;
+}
+
+
+#catogeries{
+  position: relative;
+  top: 25px;
+  margin-bottom: 25px;
+  margin-left: 105px;
+}
+.categories{
+  margin-left: 105px;
+  margin-top: 45px;
+  display: flex;
+  gap: 45px;
+  /* background-color: antiquewhite; */
+  cursor: pointer;
+
+}
+
+.fruits-vegetables{
+  border-style: none;
+  height: 200px;
+  width: 300px;
+  border-radius: .5rem;
+  
+}
+
+#Vegetables{
+  height: 150px;
+  border-radius: 40%;
+  position: relative;
+  left: 35px;
+}
+.fruits-vegetables-down h2{
+  font-size:20px;
+  position: relative;
+  left: 125px;
+  bottom: 15px;
+}
+.v{
+  position: relative;
+  right: 25px;
+}
+
+.atta{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+#attaimg{
+  height: 90px;
+}
+
+.atta-down h2{
+  position: relative;
+  left: 12px;
+  top: 15px;
+  font-size: 22px;
+}
+
+.masala{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#masalaimg{
+  height: 100px;
+  position: relative;
+  left: 10px;
+  border-radius: 50%;
+}
+
+.masala-down h2{
+  position: relative;
+  left: 12px;
+  top: 8px;
+  font-size: 22px;
+}
+
+.craving{
+  border-style:none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+#craving{
+  height: 100px;
+  position: relative;
+  left: 10px;
+  border-radius: 50%;
+}
+.craving-down h2{
+  position: relative;
+  left: 23px;
+  top: 8px;
+  font-size: 22px;  
+}
+
+.frozen{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+#frozenimg{
+  height: 100px;
+  position: relative;
+  left: 21px;
+  border-radius: 40%;
+}
+.frozen-down h2{
+  position: relative;
+  left: 8px;
+  top: 8px;
+  font-size: 20px; 
+}
+
+
+.packaged{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#packagedimg{
+  height: 85px;
+  position: relative;
+  left: 4px;
+  border-radius: 30%;
+}
+
+.packaged-down h2{
+  position: relative;
+  left: 15px;
+  top: 22px;
+  font-size: 20px; 
+}
+
+.dairy{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#dairyimg{
+  height: 80px;
+  position: relative;
+  left: 2.5px;
+  border-radius: 30%;
+}
+.dairy-down h2{
+  position: relative;
+  left: 15px;
+  top: 22px;
+  font-size: 20px; 
+}
+
+.categories2{
+  margin-left: 105px;
+  margin-top: 20px;
+  display: flex;
+  gap: 46.8px;
+  cursor: pointer;
+}
+
+.cold-drinks{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#cold-drinksimg{
+  height: 70px;
+  width: px;
+  position: relative;
+  left: .5px;
+  top: 10px;
+  border-radius: 30%;
+}
+.cold-drinks-down h2{
+  position: relative;
+  left: 7px;
+  top: 40px;
+  font-size: 20px;
+}
+
+.munchies{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#munchiesimg{
+  height: 90px;
+  width: px;
+  position: relative;
+  left: 7px;
+  top: 10px;
+  border-radius: 30%;
+}
+.munchies-down h2{
+  position: relative;
+  left: 12px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.fishes{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+#fishesimg{
+  height: 90px;
+  width: px;
+  position: relative;
+  left: 2.5px;
+  top: 10px;
+  border-radius: 0%;
+}
+
+.fishes-down h2{
+  position: relative;
+  left: 12px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.breakfast{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+#breakfastimg{
+  height: 90px;
+  width: px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+  border-radius: 0%;
+}
+.breakfast-down h2{
+  position: relative;
+  left: 16px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.tea{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#teaimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:30%;
+
+}
+.tea-down h2{
+  position: relative;
+  left: 10px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.biscuits{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+#biscuitsimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:50%;
+}
+.biscuits-down h2{
+  position: relative;
+  left: 20px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.Makup{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#Makupimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+.Makup-down h2{
+  position: relative;
+  left: 10px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.bath{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#bathimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+.bath-down h2{
+  position: relative;
+  left: 10px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.categories3{
+  margin-left: 105px;
+  margin-top: 20px;
+  display: flex;
+  gap: 46.8px;
+  cursor: pointer;
+}
+
+.cleaning{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#cleaningimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+
+.cleaning-down h2{
+  position: relative;
+  left: 10px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.Home{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#Homeimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+.Home-down h2{
+  position: relative;
+  left: 30px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.Electricals{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#Electricalsimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+
+.Electricals-down h2{
+  position: relative;
+  left: 7px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.grooming{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#groomingimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+
+.grooming-down h2{
+  position: relative;
+  left: 13.5px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.hygiene{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#hygieneimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+.hygiene-down h2{
+  position: relative;
+  left: 13.5px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.baby{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#babyimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+
+.baby-down h2{
+  position: relative;
+  left: 38px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.pet{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#petimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+
+.pet-down h2{
+  position: relative;
+  left: 40px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.paancorner{
+  border-style: none;
+  height: 170px;
+  width: 125px;
+  border-radius: .5rem;
+}
+
+#paancornerimg{
+  height: 90px;
+  width: 110px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  border-radius:25%;
+}
+
+.paancorner-down h2{
+  position: relative;
+  left: 35px;
+  top: 22px;
+  font-size: 20px;
+}
+
+#coconuttender{
+  border-style: none;
+  height: 300px;
+  width: 1325px;
+  margin-left: 105px;
+  margin-top: 35px;
+  border-radius: .5rem;
+  background-color: rgb(13, 143, 13);
+  display: flex;
+}
+.coconuttender-left h1{
+  font-weight: 700;
+  color: white;
+  background-color: rgb(17, 94, 17);
+  width: 200px;
+  border-radius: .5rem;
+}
+
+.get{
+  color: white;
+  font-size: 45px;
+  font-weight: 750;
+  padding-left: 45px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 5px;
+}
+
+.valid{
+  color: rgba(255, 255, 255, 0.59);
+  font-size: 35px;
+  font-weight: 500;
+  padding-left: 45px;
+  letter-spacing: 3px;
+
+}
+.coconuttender-right{
+  padding-left: 250px;
+  display: flex;
+}
+#tenderimg{
+  height: 298px;
+  border-radius: 30%;
+}
+
+.fa-money-bill{
+  font-size: 155px;
+}
+.n{
+  font-size: 35px;
+  position: relative;
+  right: 105px;
+  top: 50px;
+  font-weight: 500;
+  color: white;
+}
+
+.footer{
+  border-style: solid;
+  border-color: white;
+  height: 295plapx;
+  background-color: rgba(140, 20, 252, 1);
+  display: flex;
+}
+.footerleft h1{
+  font-size: 55px;
+  position: relative;
+  left: 35px;
+  color: rgb(127, 19, 19);
+  font-weight: 700;
+  
+}
+.footermid{
+  display: flex;
+  margin-top: 10px
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Long+Cang&family=Manrope:wght@600&family=Noto+Sans+Old+Permic&family=Pacifico&family=Philosopher&family=Playfair+Display:wght@600&family=Poppins:wght@100;200;300;400&family=Ubuntu&display=swap');
+
+#thoght{
+  font-family: 'Long Cang', cursive;
+  font-size: 25px;
+  font-weight: 900;
+  color: aquamarine;
+  margin-top: 65px;
+}
+.midleft{
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: 105px;
+  font-size: 20px;
+}
+#download {
+  margin-top: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.midright{
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: 75px;
+  font-size: 20px;
+}
+#produts{
+  margin-top: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.social{
+  text-decoration: none;
+  /* font-size: large; */
+  
+
+}
+
+.footerright h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 20px;
+  font-size: 35px;
+  color: white;
+}
+
+.social a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid white;
+  border-radius: 50%;
+  color:white;
+  font-size: 40px;
+  margin: 1.0rem 1.5rem 3rem 0;
+  transition: .5s ease;
+  text-decoration: none;
+
+}
+
+.social a:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 1rem white;
+}
+
+.entrys{
+  margin-left: 50px;
+}
+#Email{
+  width: 250px;
+}
+#Email::placeholder{
+  position: relative;
+  right: 35px;
+  top: 1px;
+}
+
+.footer-text{
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  font-weight: 600;
+  color: white;
+  border-style: none;
+}
