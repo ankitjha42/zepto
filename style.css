@@ -1429,13 +1429,14 @@ span{
   font-size: 55px;
   position: relative;
   left: 35px;
+  bottom: 25px;
   color: rgb(127, 19, 19);
   font-weight: 700;
   
 }
 .footermid{
   display: flex;
-  margin-top: 10px
+  margin-top: 1px
 
 }
 
@@ -1447,7 +1448,8 @@ span{
   font-size: 25px;
   font-weight: 900;
   color: aquamarine;
-  margin-top: 65px;
+  position: relative;
+  bottom: 25px;
 }
 .midleft{
   display: flex;
